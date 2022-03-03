@@ -186,10 +186,6 @@ html{
     opacity: 1;
 }
 
-.conteudo-principal .paineis .seta.final{
-    
-}
-
 @media(max-width: 900px){
     .conteudo-principal .paineis{
         height: 500px;
