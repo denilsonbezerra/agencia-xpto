@@ -117,6 +117,7 @@ html{
     color: #ffffff;
     text-transform: uppercase;
     font-size: calc(1em + 1vw);
+    opacity: 80%;
 }
 
 .conteudo-principal .paineis .imagem-painel{
@@ -183,6 +184,10 @@ html{
     width: 45px;
     height: 45px;
     opacity: 1;
+}
+
+.conteudo-principal .paineis .seta.final{
+    
 }
 
 @media(max-width: 900px){
