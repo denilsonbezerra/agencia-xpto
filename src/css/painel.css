@@ -1,0 +1,86 @@
+.conteudo-principal .paineis{
+    height: 700px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-principal .paineis .titulo{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: calc(1em + 1vw);
+    opacity: 80%;
+}
+
+.conteudo-principal .paineis .imagem-painel{
+    z-index: -1;
+    height: 100%;
+    min-width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(70%);
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.conteudo-principal .paineis .projeto1{
+    background-image: url('../img/painel1.jpg');
+}
+
+.conteudo-principal .paineis .projeto2{
+    background-image: url('../img/painel2.jpg');
+}
+
+.conteudo-principal .paineis .projeto3{
+    background-image: url('../img/painel3.jpg');
+}
+
+.conteudo-principal .paineis .imagem-painel.mostrar{
+    opacity: 1;
+}
+
+.conteudo-principal .paineis .seta{
+    background-image: url('../img/seta.png');
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    text-indent: 100%;
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.75;
+}
+
+.conteudo-principal .paineis .seta.btn-voltar{
+    left: 20px;
+    transition: 0.3s ease-in-out;
+    transform: rotate(180deg);
+}
+
+.conteudo-principal .paineis .seta.btn-voltar:hover{
+    width: 45px;
+    height: 45px;
+    opacity: 1;
+    transform: rotate(180deg);
+}
+
+.conteudo-principal .paineis .seta.btn-avancar{
+    right: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.conteudo-principal .paineis .seta.btn-avancar:hover{
+    width: 45px;
+    height: 45px;
+    opacity: 1;
+}
+
+@media(max-width: 900px){
+    .conteudo-principal .paineis{
+        height: 500px;
+    }
+}
